@@ -2,7 +2,7 @@ const express=require('express')
 const router=express.Router();  //instead of app.get we r using router.get
 const User=require('../models/User')
 const {body,validationResult}=require('express-validator')  //express validator docs
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 var jwt=require('jsonwebtoken')
 const fetchuser=require('../middleware/fetchuser') //Thus is middle ware 
 
